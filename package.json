@@ -13,6 +13,9 @@
         "email": "nova706@gmail.com",
         "url": "http://www.davidpaulhamilton.net/"
     },
+    "homepage": "https://github.com/bishop-ai/bishop-ai-ifttt",
+    "bugs": "https://github.com/bishop-ai/bishop-ai-ifttt/issues",
+    "repository": "github:bishop-ai/bishop-ai-ifttt",
     "dependencies": {
         "request": "~2.1"
     }
