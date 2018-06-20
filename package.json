@@ -1,6 +1,6 @@
 {
     "name": "bishop-ai-ifttt",
-    "version": "0.1.0",
+    "version": "0.3.0",
     "description": "Trigger IFTTT webhooks from Bishop-AI",
     "keywords": [
         "bishop-ai plugin",
@@ -15,8 +15,5 @@
     },
     "homepage": "https://github.com/bishop-ai/bishop-ai-ifttt",
     "bugs": "https://github.com/bishop-ai/bishop-ai-ifttt/issues",
-    "repository": "github:bishop-ai/bishop-ai-ifttt",
-    "dependencies": {
-        "request": "~2.1"
-    }
+    "repository": "github:bishop-ai/bishop-ai-ifttt"
 }

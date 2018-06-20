@@ -1,6 +1,7 @@
-var request = require('request');
+var Ifttt = function (axios) {
 
-var Ifttt = function () {
+    this.axios = axios;
+
     this.intent = [];
 
     var self = this;
@@ -32,12 +33,13 @@ var Ifttt = function () {
 Ifttt.prototype.makeCall = function (event, key) {
     var uri = 'https://maker.ifttt.com/trigger/' + event + '/with/key/' + key;
     console.log("IFTTT call: " + uri);
-    request(uri);
+    this.axios(uri);
 };
 
 module.exports = {
     namespace: 'ifttt',
-    register: function () {
-        return new Ifttt();
+    description: 'IFTTT integration',
+    register: function (config, nlp, axios) {
+        return new Ifttt(axios);
     }
 };
